@@ -15,7 +15,7 @@ public class FileHeadlingJAVA {
 
     public static void main(String[] args) {
         try {
-            File input = new File("input");
+            File input = new File("readfile.txt");
             File output = new File("output");
             Scanner sc = new Scanner(input);
             PrintWriter printer = new PrintWriter(output);
