@@ -16,6 +16,7 @@ import java.io.IOException;
 public class FileHeadlingJAVA {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        String inputFile = "input.txt";
+        String outputFile = "output.txt";
     }
 }
