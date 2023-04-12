@@ -14,18 +14,18 @@ import java.util.*;
 public class FileHeadlingJAVA {
 
     public static void main(String[] args) {
-        try {
-            System.out.println(new File("input").getAbsolutePath());
-            File input = new File("readfile.txt");
-            File output = new File("output");
+         try {
+            File input = new File("/readfile.txt");
+            File output = new File("/outfile.txt");
             Scanner sc = new Scanner(input);
             PrintWriter printer = new PrintWriter(output);
-            while(sc.hasNextLine()) {
+            while (sc.hasNextLine()) {
                 String s = sc.nextLine();
                 printer.write(s);
             }
+            printer.flush();
         }
-            catch(FileNotFoundException e) {
+        catch (FileNotFoundException e) {
             System.err.println("File not found. Please scan in new file.");
         }
             
