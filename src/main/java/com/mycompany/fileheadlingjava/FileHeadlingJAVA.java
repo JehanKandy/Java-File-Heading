@@ -15,19 +15,6 @@ import java.io.IOException;
 public class FileHeadlingJAVA {
 
     public static void main(String[] args) {
-        String inputFile = "input.txt";
-        String outputFile = "output.txt";
         
-        try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-             FileWriter writer = new FileWriter(outputFile)) {
-             
-            String line;
-            while ((line = reader.readLine()) != null) {
-                writer.write(line);
-                writer.write("\n"); // add a newline after each line
-            }
-        } catch (IOException e) {
-            System.err.println("Error: " + e.getMessage());
-        }
     }
 }
