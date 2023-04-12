@@ -29,6 +29,11 @@ public class FileHeadlingJAVA {
             }
             
             System.out.println(str);
+            
+            fw.write(str);
+            
+            fr.close();
+            fw.close();
         }
         catch(IOException e){
             System.out.println("Error");
