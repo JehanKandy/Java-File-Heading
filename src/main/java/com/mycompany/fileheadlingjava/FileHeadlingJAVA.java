@@ -34,6 +34,8 @@ public class FileHeadlingJAVA {
             
             fr.close();
             fw.close();
+            
+            System.out.println("file Read and Write Done");
         }
         catch(IOException e){
             System.out.println("Error");
