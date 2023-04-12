@@ -16,7 +16,7 @@ public class FileHeadlingJAVA {
 
     public static void main(String[] args) {
         try{
-            FileReader fr = new FileReader("readfile.text");
+            FileReader fr = new FileReader("readfile.txt");
             
             FileWriter fw = new FileWriter("outfile.txt");
             
