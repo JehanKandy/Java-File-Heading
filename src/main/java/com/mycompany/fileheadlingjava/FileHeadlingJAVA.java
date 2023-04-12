@@ -27,6 +27,8 @@ public class FileHeadlingJAVA {
             while((i = fr.read()) != -1){
                 str += (char)i;
             }
+            
+            System.out.println(str);
         }
         catch(IOException e){
             System.out.println("Error");
