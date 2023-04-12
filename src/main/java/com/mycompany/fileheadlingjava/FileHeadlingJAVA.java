@@ -17,6 +17,10 @@ public class FileHeadlingJAVA {
     public static void main(String[] args) {
         try{
             FileReader fr = new FileReader("readfile.text");
+            
+            FileWriter fw = new FileWriter("outfile.txt");
+            
+            String str = "";
         }
         catch(IOException e){
             System.out.println("Error");
