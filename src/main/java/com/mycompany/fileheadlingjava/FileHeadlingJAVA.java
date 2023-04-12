@@ -15,6 +15,7 @@ public class FileHeadlingJAVA {
 
     public static void main(String[] args) {
         try {
+            System.out.println(new File("input").getAbsolutePath());
             File input = new File("readfile.txt");
             File output = new File("output");
             Scanner sc = new Scanner(input);
