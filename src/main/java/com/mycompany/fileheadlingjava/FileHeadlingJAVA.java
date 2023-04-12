@@ -14,30 +14,18 @@ import java.util.*;
 public class FileHeadlingJAVA {
 
     public static void main(String[] args) {
-        try{
-            FileReader fr = new FileReader("readfile.txt");
-            
-            FileWriter fw = new FileWriter("outfile.txt");
-            
-            String str = "";
- 
-            int i;
-            
-            while ((i = fr.read()) != -1) {
-                str += (char)i;
+        try {
+            File input = new File("input");
+            File output = new File("output");
+            Scanner sc = new Scanner(input);
+            PrintWriter printer = new PrintWriter(output);
+            while(sc.hasNextLine()) {
+                String s = sc.nextLine();
+                printer.write(s);
             }
-            
-            System.out.println(str);
-            
-            fw.write(str);
-            
-            fr.close();
-            fw.close();
-            
-            System.out.println("file Read and Write Done");
         }
-        catch(IOException e){
-            System.out.println("Error in File Headling");
+            catch(FileNotFoundException e) {
+            System.err.println("File not found. Please scan in new file.");
         }
             
     }
