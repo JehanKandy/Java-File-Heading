@@ -38,7 +38,7 @@ public class FileHeadlingJAVA {
             System.out.println("file Read and Write Done");
         }
         catch(IOException e){
-            System.out.println("Error");
+            System.out.println("Error in File Headling");
         }
             
     }
