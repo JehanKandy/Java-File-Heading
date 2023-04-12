@@ -21,6 +21,12 @@ public class FileHeadlingJAVA {
             FileWriter fw = new FileWriter("outfile.txt");
             
             String str = "";
+            
+            int i;
+            
+            while((i = fr.read()) != -1){
+                str += (char)i;
+            }
         }
         catch(IOException e){
             System.out.println("Error");
