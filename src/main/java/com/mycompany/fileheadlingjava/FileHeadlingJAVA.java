@@ -15,6 +15,12 @@ import java.io.IOException;
 public class FileHeadlingJAVA {
 
     public static void main(String[] args) {
-        
+        try{
+            FileReader fr = new FileReader("readfile.text");
+        }
+        catch(IOException e){
+            System.out.println("Error");
+        }
+            
     }
 }
